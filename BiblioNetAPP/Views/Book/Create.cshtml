@@ -12,5 +12,15 @@
         <input type="text" asp-for="BookName" class="form-control" />
         <span asp-validation-for="BookName" class="text-danger"> </span>
     </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input type="text" asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"> </span>
+    </div>
     <button type="submit" class="btn btn-primary">Create</button>
 </form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
